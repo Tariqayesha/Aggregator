@@ -1,172 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio Website">
-      
-    <title>Ayesha's - Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=deployed_code_account" />
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Felipa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=sign_language" />
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Ayesha Tariq</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Ayesha Tariq, I possess a strong drive for self-improvement, constantly seeking new knowledge and diverse viewpoints to enhance my expertise. I am adept at both collaborative teamwork and effective leadership. Furthermore, I am proficient in problem-solving and show resolute dedication in finding workable solutions when encountering obstacles." Check out my work and get in touch!</p>
-            </div>
-            <div class="profile">
-                <img src="cat.jpg" alt="Your Name">
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="connect.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Campus Connect Phase 3 Integration and Monitoring Dashboard</h3>
-                    <p>Developed a web-based application that seamlessly integrated Phase 3 campus infrastructure with the main campus, leveraging Arduino and sensor technologies. Collected and analyzed real-time data across 50+ metrics, enhancing infrastructure monitoring efficiency by 40%. Created a comprehensive full-stack dashboard, improving response time to critical alerts by 30%.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="news.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Personalized News Aggregator</h3>
-                    <p>Created a machine learning-powered news aggregator that curates content based on users' reading history and preferences, offering a tailored news experience</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="sign.jpg" alt="Project 1">
-                <div class="project-info">
-                    <span class="material-symbols-outlined">
-                        sign_language
-                        </span>
-                    <h3>Sign Language Recognition System</h3>
-                    <p>This project creates a real-time sign language detection system using TensorFlow's Object Detection API and Python. It employs a Single Shot Multibox Detector (SSD) to recognize and classify sign language gestures from a webcam or video feed, translating them into text or speech for effective communication.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="email.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Email Classification</h3>
-                    <p>Built a spam email detection system using logistic regression and TF-IDF features, achieving a classification accuracy of 95%, significantly reducing spam email intrusions</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="logger.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Economic Data Logger with Graphical Interface</h3>
-                    <p>Built a circuit to log data and serve the department with graphical data representation. Achieved up to 35% more cost savings and provided real-time data insights, improving departmental operations.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-                </div>
-            </div>
+h1 {
+    text-align: center;
+    color: #007bff;
+}
 
+#news-container {
+    margin-top: 20px;
+}
 
-            <!-- More projects can go here -->
-        </div>
-    </section>
+.news-article {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
 
-    <section id="skills" class="section">
-        <h2>Skills & Technologies</h2>
-        <div class="skills-list">
-            <div class="skill">HTML, CSS, JavaScript</div>
-            <div class="skill">React, Node.js</div>
-            <div class="skill">Python, Django</div>
-            <!-- Add more skills as needed -->
-        </div>
-    </section>
+.news-article h2 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: #007bff;
+}
 
-    <!-- Blog Section -->
-<!-- Blog Section -->
-<section id="blog" class="section">
-    <h2>My Blog</h2>
-    <div class="blog-container">
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>Blog Post 1</h3>
-                <p>This is the introduction to the first blog post. <a href="blog-post-1.html">Read more...</a></p>
-            </div>
-            <div class="blog-post">
-                <h3>Blog Post 2</h3>
-                <p>This is the introduction to the second blog post. <a href="blog-post-2.html">Read more...</a></p>
-            </div>
-            <div class="blog-post">
-                <h3>Blog Post 2</h3>
-                <p>This is the introduction to the second blog post. <a href="blog-post-2.html">Read more...</a></p>
-            </div>
-            <div class="blog-post">
-                <h3>Blog Post 2</h3>
-                <p>This is the introduction to the second blog post. <a href="blog-post-2.html">Read more...</a></p>
-            </div>
-            <!-- More blog posts can be added similarly -->
-        </div>
-    </div>
-</section>
+.news-article p {
+    margin: 5px 0;
+    color: #555;
+}
 
-        <!-- Slideshow for Blog -->
-        <div class="blog-slideshow">
-            <div class="slideshow-container">
-                <div class="slide">
-                    <img src="email.jpg" alt="Blog Image 1">
-                    
-                        <h3>Blog Post 1</h3>
-                        <p>This is the introduction to the first blog post. <a href="blog-post-1.html">Read more...</a></p>
-                    
-                </div>
-                <div class="slide">
-                    <img src="assets/blog2.jpg" alt="Blog Image 2">
-                </div>
-                <div class="slide">
-                    <img src="assets/blog3.jpg" alt="Blog Image 3">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+.news-article a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
 
-
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ayesha Tariq. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+.news-article a:hover {
+    text-decoration: underline;
+}
